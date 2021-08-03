@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  fetch("https://br-gallery-project.herokuapp.com/paintings")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
+
+    
   return (
     <div className="App">
       <header className="App-header">
