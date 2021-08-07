@@ -8,8 +8,9 @@ function Gallery({ paintings }) {
         return (
             <Link 
                 key={painting.id}
-                to={{pathname: `/painting/${painting.id}`, 
-            }}>        
+                to={{pathname: `/painting/${painting.id}`}}
+                style={{textDecoration: "none", color: "black" }}
+                >        
                 <ArtworkThumbnail painting={painting} />
             </Link>
         )
