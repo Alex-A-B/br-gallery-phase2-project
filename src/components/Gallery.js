@@ -1,19 +1,23 @@
 // import { useState } from 'react'
+import { Link } from "react-router-dom"
 import ArtworkThumbnail from "./ArtworkThumbnail"
 
 function Gallery({ paintings }) {
 
-     const renderPaintings = paintings.map( (painting) => {
-        return <ArtworkThumbnail
+    const renderPaintings = paintings.map( (painting) => {
+        return (
+            <Link 
                 key={painting.id}
-                painting={painting}
-            />
+                to={{pathname: `/painting/${painting.id}`, 
+            }}>        
+                <ArtworkThumbnail painting={painting} />
+            </Link>
+        )
         }
     )
 
     return (
         <div className="gallery">
-            {/* <p>Here is where the paintings will be stored and all will be good in the world!</p> */}
             {renderPaintings}
         </div>
     )

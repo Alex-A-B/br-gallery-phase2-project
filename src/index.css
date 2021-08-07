@@ -41,6 +41,11 @@ nav a.active {
   color: darkslategrey;
 }
 
+.home{
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
 .gallery {
   margin-top: 3rem;
   display: flex;
@@ -48,6 +53,7 @@ nav a.active {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-between;
+  
 }
 
 .artwork-thumbnail {
@@ -60,6 +66,7 @@ nav a.active {
   padding: 1rem;
   width: 20rem;
   max-width: 20rem;
+
 }
 
 .thumbnail {
@@ -73,3 +80,4 @@ nav a.active {
   padding: 0.5rem;
   margin: 1rem;
 }
+

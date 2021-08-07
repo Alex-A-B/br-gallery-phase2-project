@@ -3,7 +3,9 @@ import { Switch, Route } from "react-router-dom"
 import NavBar from "./NavBar"
 import Home from "./Home"
 import Gallery from "./Gallery"
-import AddArtForm from "./AddArtForm"
+import AboutBob from "./AboutBob"
+import PaintingView from "./PaintingView"
+// import Modal from "./Modal"
 
 
 function App() {
@@ -15,25 +17,29 @@ function App() {
     .then(paintings => setPaintings(paintings))
     .catch(error => console.log(error))
   }, [])
-
+  
+  
   return (
     <div>
       <NavBar />
-      <Switch>
+      <Switch >
         <Route exact path="/">
           <Home />
         </Route>
         <Route path="/gallery">
-          <Gallery paintings={paintings}/>
+          <Gallery paintings={paintings} />
         </Route>
-        <Route path="/add-new-artwork">
-          <AddArtForm />
+        <Route path="/about-bob">
+          <AboutBob />
+        </Route>
+        <Route path="/painting/:id">
+          <PaintingView />
         </Route>
         <Route path="*">
-          <h1>404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h1>
+          <h1 className="home">404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h1>
         </Route>
       </Switch>
-      
+      {/* {background && <Route path="/painting/:id"><Modal paintings={paintings}/></Route>} */}
     </div>
   );
 }
