@@ -81,3 +81,19 @@ nav a.active {
   margin: 1rem;
 }
 
+.artwork {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: space-between;
+
+  margin-top: 4rem;
+  margin-left: 5rem;
+
+  border: 1px solid brown;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  width: 30rem;
+
+}
