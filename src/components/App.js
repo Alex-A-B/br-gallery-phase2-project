@@ -29,6 +29,9 @@ function App() {
         <Route path="/add-new-artwork">
           <AddArtForm />
         </Route>
+        <Route path="*">
+          <h1>404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h1>
+        </Route>
       </Switch>
       
     </div>

@@ -1,12 +1,20 @@
 // import { useState } from 'react'
+import ArtworkThumbnail from "./ArtworkThumbnail"
 
 function Gallery({ paintings }) {
 
-    console.log(paintings)
+     const renderPaintings = paintings.map( (painting) => {
+        return <ArtworkThumbnail
+                key={painting.id}
+                painting={painting}
+            />
+        }
+    )
 
     return (
-        <div>
-            <p>Here is where the paintings will be stored and all will be good in the world!</p>
+        <div className="gallery">
+            {/* <p>Here is where the paintings will be stored and all will be good in the world!</p> */}
+            {renderPaintings}
         </div>
     )
 }
