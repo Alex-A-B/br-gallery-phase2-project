@@ -5,7 +5,7 @@ import Home from "./Home"
 import Gallery from "./Gallery"
 import AboutBob from "./AboutBob"
 import PaintingView from "./PaintingView"
-// import Modal from "./Modal"
+
 
 
 function App() {
@@ -36,10 +36,9 @@ function App() {
           <PaintingView />
         </Route>
         <Route path="*">
-          <h1 className="home">404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h1>
+          <h2 className="home">404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h2>
         </Route>
       </Switch>
-      {/* {background && <Route path="/painting/:id"><Modal paintings={paintings}/></Route>} */}
     </div>
   );
 }
