@@ -36,7 +36,7 @@ function App() {
           <PaintingView />
         </Route>
         <Route path="*">
-          <h2 className="home">404: Looks like we're gonna have to beat the devil out of our servers, we can't find your file</h2>
+          <h2 className="home">404: Looks like we're gonna have to beat the devil out of our servers, we can't find your page!</h2>
         </Route>
       </Switch>
     </div>

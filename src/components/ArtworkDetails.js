@@ -2,16 +2,15 @@ import { useState } from "react"
 
 function ArtworkDetails( { painting }) {
     const [extraDetails, setExtraDetails] = useState(false)
-    const {img_src, painting_title, season, episode, /*colors*/} = painting
+    const {img_src, painting_title, season, episode} = painting
 
     function handleExtraDetails(){
         setExtraDetails(!extraDetails)
     }
 
-    // console.log(colors)
-
-    // const listColors = colors.map( (color) => {return <li> {color} </li> })
-   
+    console.log(painting)
+    
+       
     if (Object.keys(painting).length < 1 ) {
         return <h1 className="home">Loading...</h1>
     }
@@ -24,7 +23,7 @@ function ArtworkDetails( { painting }) {
             <div>
                 <img className="artwork-large" src={img_src} alt={painting_title} />
             </div>
-            {extraDetails ? <div> <p>This picture is from season <strong>{season}</strong> episode <strong>{episode}</strong>.</p></div> : null}
+            {extraDetails ? <div> <p>This picture was painted in season <strong>{season}</strong> episode <strong>{episode}</strong>.</p></div> : null}
         </div>
     )
 }
