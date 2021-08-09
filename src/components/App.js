@@ -24,7 +24,7 @@ function App() {
       <NavBar />
       <Switch >
         <Route exact path="/">
-          <Home />
+          <Home paintings={paintings} />
         </Route>
         <Route path="/gallery">
           <Gallery paintings={paintings} />

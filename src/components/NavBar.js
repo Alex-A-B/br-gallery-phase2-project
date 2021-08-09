@@ -6,7 +6,7 @@ function NavBar() {
         <nav>
             <NavLink exact to="/">Home</NavLink>
             <NavLink to="/gallery">Gallery</NavLink>
-            <NavLink to="/about-bob">About Bob</NavLink>
+            {/* <NavLink to="/about-bob">About Bob</NavLink> */}
         </nav>
     )
 }

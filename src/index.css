@@ -98,3 +98,40 @@ nav a.active {
 
   cursor: pointer;
 }
+
+.gallery-preview {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+.artwork-preview {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  border: 1px solid antiquewhite;
+  border-radius: 0.5rem;
+  
+
+  max-width: 85%;
+}
+
+.more-art {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid slategrey;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.75rem;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.more-art:hover {
+  background-color: slategrey;
+  color: white;
+}
