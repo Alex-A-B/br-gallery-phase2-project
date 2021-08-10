@@ -27,7 +27,7 @@ function Home( { paintings }) {
             <h2>Hello there, welcome to the Bob Ross Art Gallery </h2>
             <p>Featuring the paintings Bob created across the many series of <em>"The Joy of Painting"</em>.</p>
             <p>If you want a closer look, just click the painting and take a look.</p>
-            <p>Here is a preview of what's in the gallery, if you would like to see it in it's entirety, please visit the main gallery.</p>
+            <p>Here is a preview of what's in the gallery, if you would like to see it in its entirety, please visit the main gallery.</p>
             <div className="gallery-preview">
                 <div className="artwork-preview">
                     {paintingPreview}
